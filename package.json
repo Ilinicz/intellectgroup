@@ -2,12 +2,11 @@
   "name": "igroup",
   "version": "0.1.0",
   "private": true,
-  "homepage": "git@github.com:Ilinicz/intellectgroup",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "node ./node_modules/vue-gh-pages/index.js"
+    "deploy": "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup",
   },
   "dependencies": {
     "vue": "^2.5.13",
@@ -21,8 +20,8 @@
     "@vue/cli-service": "^3.0.0-beta.6",
     "@vue/eslint-config-airbnb": "^3.0.0-beta.6",
     "node-sass": "^4.7.2",
+    "push-dir": "^0.4.1",
     "sass-loader": "^6.0.6",
-    "vue-gh-pages": "^1.10.2",
     "vue-template-compiler": "^2.5.13"
   },
   "browserslist": [
