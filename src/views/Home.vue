@@ -15,8 +15,8 @@
     <div class='wrapper'>
       <section id='home'>
         <div class="container" v-scroll-reveal.reset='{ delay: 150 }'>
-          <h1 class="lead">Делаем мир лучше с 2005 года</h1>
-          <p>Разумные решения в области инжиниринга, IT и консалтинга</p>
+          <h1 class="lead">Разумные решения <br> в области инжиниринга, IT и консалтинга</h1>
+          <p>Делаем мир лучше с 2005 года</p>
         </div>
         <scrollactive id="down" :offset='0' v-scroll-reveal.reset='{ delay: 350 }'>
           <a class='scrollactive-item' href="#about">
@@ -286,7 +286,7 @@ export default {
       max-width: 900px;
       h1 {
         color: #fff;
-        font-size:42px;
+        font-size:36px;
         line-height: 1.2;
         margin-bottom: 0.5rem;
         text-shadow: 3px 3px 0 $blue, -3px -3px 0 $blue;
@@ -325,6 +325,9 @@ export default {
     @include tablet-portrait {
       .container {
         padding: 4rem;
+        h1 {
+          font-size: 42px;
+        }
       }
       #down {
         bottom: 4rem;
