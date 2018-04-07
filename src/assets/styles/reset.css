@@ -21,6 +21,8 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent; /* 3 */
   -ms-overflow-style: scrollbar; /* 4 */
+
+  background-color: #f9f9f9;
 }
 
 body {

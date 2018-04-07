@@ -10,6 +10,7 @@
 
 <style lang="scss">
 @import './assets/styles/reset.css';
+@import './assets/styles/mixins.scss';
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
 
 #app {

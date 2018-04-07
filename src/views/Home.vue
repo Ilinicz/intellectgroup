@@ -15,8 +15,8 @@
     <div class='wrapper'>
       <section id='home'>
         <div class="container" v-scroll-reveal.reset='{ delay: 150 }'>
-          <h1 class="lead">Более 10 лет <br> на страже ваших серверов</h1>
-          <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности способствует реализации прогрессивного развития</p>
+          <h1 class="lead">Делаем мир лучше с 2005 года</h1>
+          <p>Разумные решения в области инжиниринга, IT и консалтинга</p>
         </div>
         <scrollactive id="down" :offset='0' v-scroll-reveal.reset='{ delay: 350 }'>
           <a class='scrollactive-item' href="#about">
@@ -32,15 +32,16 @@
           <div class='content'>
             <div class='inner' v-scroll-reveal.reset='{ delay: 150 }'>
               <h2>Инжиниринг</h2>
-              <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности способствует реализации прогрессивного развития</p>
+              <p>Мы выполняем любые виды инженерных работ, от проектирования до аудита.</p>
               <div class="tag-list">
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
+                <span class='tag'>Проектирование</span>
+                <span class='tag'>Монтаж</span>
+                <span class='tag'>Аудит</span>
+                <span class="tag">Экспертиза</span>
+                <span class='tag'>Пусконаладочные работы</span>
+                <span class='tag'>Промышленное строительство</span>
+                <span class='tag'>Энергетическое строительство</span>
+                <span class='tag'>Сети</span>
               </div>
             </div>
           </div>
@@ -52,15 +53,19 @@
           <div class='content'>
             <div class='inner' v-scroll-reveal.reset='{ delay: 150 }'>
               <h2>Разработка ПО</h2>
-              <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности способствует реализации прогрессивного развития</p>
+              <p>Реализуем самые смелые и высокотехнологичные проекты в области IT: от разработки ПО любой сложности до нейросетей и виртуальных рабочих столов для тысяч сотрудников.</p>
               <div class="tag-list">
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
+                <span class='tag'>Сервисы</span>
+                <span class='tag'>Web</span>
+                <span class='tag'>IOS</span>
+                <span class='tag'>Android</span>
+                <span class='tag'>Системы BI</span>
+                <span class='tag'>Машинное обучение</span>
+                <span class='tag'>IoT</span>
+                <span class='tag'>Онлайн-коммуникации</span>
+                <span class="tag">Ruby on Rails</span>
+                <span class="tag">Интерфейсы</span>
+                <span class="tag">UX/UI</span>
               </div>
             </div>
           </div>
@@ -72,15 +77,15 @@
           <div class='content'>
             <div class='inner' v-scroll-reveal.reset='{ delay: 150 }'>
               <h2>Консалтинг</h2>
-              <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности способствует реализации прогрессивного развития</p>
+              <p>Команда высококвалифицированных специалистов в области бухгалтерского учёта, юриспруденции и HR.</p>
               <div class="tag-list">
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
-                <span class='tag'>Блокчейн</span>
+                <span class='tag'>Первичная документация</span>
+                <span class='tag'>Сопровождение</span>
+                <span class='tag'>Бухгалтерия</span>
+                <span class='tag'>Кадровый учет</span>
+                <span class='tag'>HR</span>
+                <span class='tag'>Подбор кадров</span>
+                <span class='tag'>Юридическа поддержка</span>
               </div>
             </div>
           </div>
@@ -91,15 +96,15 @@
       </section-->
       <section id='contact'>
         <div class='container'>
+          <h1>Свяжитесь с нами</h1>
+          <p>По рабочим и выходным</p>
           <div class="contact-group">
             <form v-scroll-reveal.reset='{ delay: 150 }'>
-              <h1>Свяжитесь с нами</h1>
-              <p>Значимость этих проблем настолько очевидна</p>
               <div class="input-group">
                 <input type="string" name="name" placeholder="Имя">
                 <input type="string" name="email" placeholder="Email">
               </div>
-              <textarea rows="15" placeholder="Ваш вопрос">
+              <textarea placeholder="Ваш вопрос">
               </textarea>
               <button type='submit'>Отправить</button>
             </form>
@@ -107,7 +112,7 @@
             <ul class="address" v-scroll-reveal.reset='{ delay: 500 }'>
               <li>
                 <h4>Адрес</h4>
-                <p>12345 Somewhere Road #654 Kappakabana Beach</p>
+                <p>Верхняя Масловка 28/2 <br> Москва, Россия</p>
               </li>
               <li>
                 <h4>Email</h4>
@@ -148,14 +153,16 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+  @import '../assets/styles/mixins.scss';
+
   .logo {
     position: fixed;
-    top: 3rem;
-    right: 3rem;
+    top: 1rem;
+    right: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     display: flex;
     flex-flow: column nowrap;
@@ -165,11 +172,25 @@ export default {
     z-index: 98;
     .small {
       display: block;
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 400;
       //letter-spacing: 1px;
       margin-top: -2px;
       //margin-left: 0.25rem;
+    }
+    @include tablet-landscape {
+      top: 2rem;
+      right: 2rem;
+      font-size: 20px;
+    }
+
+    @include desktop {
+      top: 3rem;
+      right: 3rem;
+      font-size: 22px;
+      .small {
+        font-size: 16px;
+      }
     }
   }
   .fixed-nav {
@@ -192,6 +213,7 @@ export default {
     text-align: right;
     text-transform: uppercase;
     font-variant: small-caps;
+    display: none;
 
     &.hide {
       opacity: 0;
@@ -211,10 +233,33 @@ export default {
         box-shadow: 2px 0 0 0 #fff;
       }
     }
+
+    @include tablet-landscape {
+      display: flex;
+      width: 200px;
+      padding: 1.5rem;
+      .scrollactive-item {
+        padding-right: 1.2rem;
+      }
+    }
+    @include desktop {
+      display: flex;
+      width: 300px;
+      padding: 2rem;
+      .scrollactive-item {
+        padding-right: 2rem;
+      }
+    }
   }
 
   .wrapper {
-    margin-left: 300px;
+    margin-left: 0;
+    @include tablet-landscape {
+      margin-left: 200px;
+    }
+    @include desktop {
+      margin-left: 300px;
+    }
   }
 
   section {
@@ -237,30 +282,31 @@ export default {
     justify-content: center;
     align-items: flex-start;
     .container {
-      padding: 4rem;
+      padding: 2rem;
       max-width: 900px;
       h1 {
         color: #fff;
         font-size:42px;
         line-height: 1.2;
         margin-bottom: 0.5rem;
+        text-shadow: 3px 3px 0 $blue, -3px -3px 0 $blue;
+
       }
       p {
         font-size: 1.25rem;
         line-height: 1.8;
         margin-top: 2rem;
         color: rgba(255, 255, 255, 0.75);
+        text-shadow: 2px 2px 0 $blue, -2px -2px 0 $blue;
       }
     }
     #down {
-      //position: absolute;
-      bottom: 8rem;
-      left: 50%;
-      margin-left: 4rem;
+      position: absolute;
+      bottom: 4rem;
+      left: 2rem;
       //transform: translate(-50%, 0);
       width: 70px;
       height: 70px;
-      opacity: 0.8;
       a {
         width: 100%;
         height: 100%;
@@ -268,9 +314,21 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid #fff;
+        border: 2px solid rgba(#fff, 0.7);
         font-size: 12px;
-        color: #fff;
+        color: rgba(#fff, 0.7);
+        box-shadow: 0 0 0 4px $blue;
+        background-color: $blue;
+      }
+    }
+
+    @include tablet-portrait {
+      .container {
+        padding: 4rem;
+      }
+      #down {
+        bottom: 4rem;
+        left: 4rem;
       }
     }
   }
@@ -279,29 +337,32 @@ export default {
     z-index: 2;
     .skill-block {
       //min-height: 380px;
-      padding: 6rem;
+      padding: 2rem 0;
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: column nowrap;
       justify-content: flex-start;
-      align-items: center;
+      //align-items: center;
       //border-bottom: 1px solid #ddd;
       .image {
         //background-color: rgba(#eee, 0.4);
-        padding: 0 2rem;
-        margin-right: 6rem;
+        //padding: 0 2rem;
+        //margin-right: 6rem;
+        padding: 2rem;
+        padding-bottom: 0;
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        //display: flex;
+        //align-items: center;
+        //justify-content: center;
          img {
-          width: 120px;
+          width: 100px;
           height: auto;
          }
       }
       .content {
         max-width: 800px;
         //padding: 4rem;
-        padding-left: 0;
+        padding: 2rem;
+        //text-align: center;
         h2 {
           font-size: 1.75rem;
           line-height: 1.4;
@@ -315,7 +376,7 @@ export default {
           line-height: 1.8;
         }
         .tag-list {
-          max-width: 500px;
+          max-width: 700px;
           //display: flex;
         }
         .tag {
@@ -324,7 +385,7 @@ export default {
           padding: 4px 8px;
           border-radius: 3px;
           color: #555;
-          font-size: 0.9rem;
+          font-size: 0.7rem;
           font-weight: 500;
           margin-right: 0.75rem;
           margin-bottom: 0.75rem;
@@ -337,6 +398,70 @@ export default {
     .skill-block:nth-child(3) {
       background-color: rgba($blue, 0.06);
     }
+
+    @include tablet-portrait {
+      .skill-block {
+        padding: 2rem;
+      }
+    }
+
+    @include tablet-landscape {
+      .skill-block {
+        padding: 0rem;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        .image {
+          //padding: 0 2rem;
+          //padding-right: 2rem;
+          padding: 0;
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 100px;
+          }
+        }
+        .content {
+          width: 70%;
+          padding: 4rem;
+          padding-left: 0;
+          padding-right: 2rem;
+        }
+      }
+    }
+
+    @include desktop {
+      .skill-block {
+        padding: 0rem;
+        flex-flow: row nowrap;
+        align-items: center;
+        //justify-content: flex-end;
+
+        .image {
+          //padding: 0 2rem;
+          //padding-right: 2rem;
+          padding: 0;
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 120px;
+          }
+        }
+        .content {
+          width: 70%;
+          padding: 6rem;
+          padding-left: 0;
+          padding-right: 2rem;
+          .tag {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
   }
   #portfolio {
     background: $gray-lightest;
@@ -344,15 +469,13 @@ export default {
   }
 
   #contact {
-    height:  calc(100vh - 150px);
     min-height: 0;
     position: relative;
     z-index: 2;
     margin-bottom: 150px;
-    //background-color: #fff;
-    box-shadow: 0 1px 16px rgba(#003171, 0.02);
+    box-shadow: 0 4px 4px rgba(#003171, 0.01);
     .container {
-      padding: 4rem;
+      padding: 4rem 2rem;
       background-color: #fff;
       h1 {
         font-size: 1.75rem;
@@ -364,22 +487,22 @@ export default {
           font-size: 1rem;
           color: rgba(#666, 0.5);
           line-height: 1.8;
-          margin-bottom: 4rem;
+          margin-bottom: 2rem;
       }
 
       .contact-group {
         display: flex;
+        flex-flow: column-reverse nowrap;
         .address {
-          padding: 2rem 8rem;
           align-self: center;
-          width: 50%;
+          width: 100%;
           li {
-            padding: 1rem;
+            padding: 1rem 0;
             margin-bottom: 1rem;
             border-bottom: 1px solid $gray-lightest;
           }
           h4 {
-            font-size: 18px;
+            font-size: 1rem;
             margin-bottom: 1rem;
           }
           p {
@@ -392,14 +515,14 @@ export default {
       }
 
       form {
-        width: 50%;
+        //width: 50%;
         //padding: 2rem 0;
+        margin-top: 2rem;
         .input-group {
           display: flex;
-          flex-flow: row nowrap;
+          flex-flow: row wrap;
           justify-content: space-between;
           width: 100%;
-          margin-bottom: 2rem;
         }
         input {
           background-color: $gray-lightest;
@@ -407,14 +530,8 @@ export default {
           height: 60px;
           border-radius: 30px;
           padding: 1rem 2rem;
-          width: 47%;
-        }
-        label {
-          font-size: 18px;
-          color: rgba(#888, 0.9);
-          margin-bottom: 1rem;
-          display: block;
-          padding: 0 1rem;
+          width: 100%;
+          margin-bottom: 2rem;
         }
         textarea {
           background-color: $gray-lightest;
@@ -423,9 +540,10 @@ export default {
           width: 100%;
           padding: 2rem;
           margin-bottom: 2rem;
+          height: 200px;
         }
         button {
-          width: 46%;
+          width: 100%;
           margin: auto;
           height: 50px;
           border-radius: 25px;
@@ -442,21 +560,67 @@ export default {
         }
       }
     }
+
+    @include tablet-portrait {
+      .container {
+        padding: 4rem;
+      }
+    }
+
+    @include desktop {
+      margin-bottom: 250px;
+      .container {
+        padding: 4rem;
+        .contact-group {
+          flex-flow: row nowrap;
+          align-items: flex-start;
+          justify-content: space-between;
+          .address {
+            width: 30%;
+            align-self: flex-start;
+            padding: 2rem 0;
+          }
+          form {
+            width: 60%;
+            input {
+              width: 47%;
+            }
+            textarea {
+              height: 300px;
+            }
+
+            button {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
   }
 
 
   .footer {
     background-color: $gray-lightest;
-    color: rgba(#999, 0.5);
-    padding-left: 4rem;
-    display: flex;
-    align-items: center;
+    color: #e9e9e9;
+    font-weight: bold;
+    padding: 2rem;
     position: fixed;
     bottom: 0;
     right: 0;
-    width: calc(100% - 300px);
-    height: 150px;
+    width: 100%;
+    font-size: 14px;
     z-index: 1;
+    text-align: center;
+
+    @include tablet-landscape {
+      width: calc(100% - 250px);
+    }
+
+    @include desktop {
+      width: calc(100% - 300px);
+      padding: 4rem;
+      font-size: 1rem;
+    }
   }
 
 </style>
