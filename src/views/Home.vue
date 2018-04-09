@@ -472,11 +472,11 @@ export default {
   }
 
   #contact {
-    min-height: 0;
+    min-height: calc(100vh - 150px);
     position: relative;
     z-index: 2;
-    margin-bottom: 150px;
-    box-shadow: 0 4px 4px rgba(#003171, 0.01);
+    //margin-bottom: 150px;
+    box-shadow: 0 1px 0px rgba(#003171, 0.01);
     .container {
       padding: 4rem 2rem;
       background-color: #fff;
@@ -546,8 +546,11 @@ export default {
           height: 200px;
         }
         button {
-          width: 100%;
+          align-self: center;
+          width: 30%;
+          min-width: 200px;
           margin: auto;
+          margin-left: 0.25rem;
           height: 50px;
           border-radius: 25px;
           font-size: 16px;
@@ -571,7 +574,6 @@ export default {
     }
 
     @include desktop {
-      margin-bottom: 250px;
       .container {
         padding: 4rem;
         .contact-group {
@@ -593,7 +595,7 @@ export default {
             }
 
             button {
-              width: 40%;
+              width: 30%;
             }
           }
         }
@@ -604,23 +606,19 @@ export default {
 
   .footer {
     background-color: $gray-lightest;
-    color: #e9e9e9;
+    color: #d4d4d4;
     font-weight: bold;
     padding: 2rem;
-    position: fixed;
-    bottom: 0;
-    right: 0;
     width: 100%;
     font-size: 14px;
     z-index: 1;
     text-align: center;
-
-    @include tablet-landscape {
-      width: calc(100% - 250px);
-    }
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include desktop {
-      width: calc(100% - 300px);
       padding: 4rem;
       font-size: 1rem;
     }
