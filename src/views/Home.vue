@@ -95,38 +95,35 @@
         <h1 v-scroll-reveal.reset='{ delay: 150 }'>Hello World</h1>
       </section-->
       <section id='contact'>
-        <div class='container'>
-          <h1>Свяжитесь с нами</h1>
-          <p>По рабочим и выходным</p>
-          <div class="contact-group">
-            <form v-scroll-reveal.reset='{ delay: 150 }'>
-              <div class="input-group">
-                <input type="string" name="name" placeholder="Имя">
-                <input type="string" name="email" placeholder="Email">
-              </div>
-              <textarea placeholder="Ваш вопрос">
-              </textarea>
-              <button type='submit'>Отправить</button>
-            </form>
-
-            <ul class="address" v-scroll-reveal.reset='{ delay: 500 }'>
+          <h1 v-scroll-reveal.reset='{ delay: 300 }'>
+            Свяжитесь с нами
+            <p>По рабочим и выходным</p>
+          </h1>
+            <hr>
+            <ul class="contact-group" v-scroll-reveal.reset='{ delay: 300 }'>
               <li>
-                <h4>Адрес</h4>
-                <p>Верхняя Масловка 28/2 <br> Москва, Россия</p>
+                <a href="mailto:info@intellect.group">
+                  <i class='fa fa-envelope'></i>
+                  info@intellect.group
+                </a>
               </li>
               <li>
-                <h4>Email</h4>
-                <p>intellect@group.com</p>
-              </li>
-              <li>
-                <h4>Телефон</h4>
-                <p>+7 (926) 209-18-86</p>
+                <a href="tel:+79262091886">
+                  <i class='fa fa-phone'></i>
+                  +7 (926) 209-18-86
+                </a>
               </li>
             </ul>
-          </div>
+            <hr>
+            <ul class="contact-group address" v-scroll-reveal.reset='{ delay: 300 }'>
+              <li>
+                <a href="https://goo.gl/maps/EjGCJ6cgF3s" target='_blank'>
+                  <i class='fa fa-map-marker'></i>
+                  Верхняя Масловка 28, Москва
+                </a>
+              </li>
+            </ul>
 
-        </div>
-        <div class='bottom'></div>
       </section>
       <footer class='footer'>
         <div class='inner'>
@@ -199,6 +196,7 @@ export default {
     left: 0rem;
     //border-right: 1px solid rgba(#ddd, 0.2);
     box-shadow: 1px 1px 22px rgba(#003171, 0.1);
+    //box-shadow: 2px 0 0 0 rgba(darken($blue, 5%), 0.2);
     bottom: 0;
     top: 0;
     display: flex;
@@ -287,7 +285,7 @@ export default {
       h1 {
         color: #fff;
         font-size:36px;
-        line-height: 1.2;
+        line-height: 1.4;
         margin-bottom: 0.5rem;
         text-shadow: 3px 3px 0 $blue, -3px -3px 0 $blue;
 
@@ -473,132 +471,92 @@ export default {
 
   #contact {
     min-height: calc(100vh - 150px);
+    min-height: 100vh;
     position: relative;
     z-index: 2;
-    //margin-bottom: 150px;
+    padding: 2rem;
     box-shadow: 0 1px 0px rgba(#003171, 0.01);
-    .container {
-      padding: 4rem 2rem;
-      background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
       h1 {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
         line-height: 1.4;
-        margin-bottom: 0.5rem;
+        //padding: 0 2rem;
+        //margin-bottom: 0.5rem;
+        //text-align: center;
       }
       p {
-          margin: 1rem 0;
+          margin: 0;
           font-size: 1rem;
-          color: rgba(#666, 0.5);
           line-height: 1.8;
-          margin-bottom: 2rem;
-      }
-
-      .contact-group {
-        display: flex;
-        flex-flow: column-reverse nowrap;
-        .address {
-          align-self: center;
-          width: 100%;
-          li {
-            padding: 1rem 0;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid $gray-lightest;
-          }
-          h4 {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-          }
-          p {
-            font-size: 18px;
-            margin-top: 0;
-            margin-bottom: 0;
-            //color: $blue;
-          }
-        }
-      }
-
-      form {
-        //width: 50%;
-        //padding: 2rem 0;
-        margin-top: 2rem;
-        .input-group {
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          width: 100%;
-        }
-        input {
-          background-color: $gray-lightest;
-          font-size: 18px;
-          height: 60px;
-          border-radius: 30px;
-          padding: 1rem 2rem;
-          width: 100%;
-          margin-bottom: 2rem;
-        }
-        textarea {
-          background-color: $gray-lightest;
-          font-size: 18px;
-          border-radius: 30px;
-          width: 100%;
-          padding: 2rem;
-          margin-bottom: 2rem;
-          height: 200px;
-        }
-        button {
-          align-self: center;
-          width: 30%;
-          min-width: 200px;
-          margin: auto;
-          margin-left: 0.25rem;
-          height: 50px;
-          border-radius: 25px;
-          font-size: 16px;
           font-weight: 500;
-          color: #fff;
-          background-color: $blue;
-          padding: 1rem 2rem;
-          box-shadow: 0 2px 9px rgba(#003171, 0.02);
-          transition: all 0.25s ease;
-          &:hover {
-            background-color: darken($blue, 5%);
-          }
+          color: rgba(#666, 0.5);
+          margin-bottom: 2rem;
+      }
+      .contact-group {
+        //border-top: 1px solid rgba(#999, 0.1);
+        width: 100%;
+      }
+
+      hr {
+        width: 100%;
+        height: 1px;
+        // background-color: rgba(#999, 0.1);
+        background-color: transparent;
+        border: none;
+        margin: 2rem 0;
+        &:last-of-type {
+          background-color: rgba(#999, 0.1);
         }
       }
-    }
+      li {
+        //display: inline-block;
+        padding: 0.25rem 0;
+        margin-bottom: 0.5rem;
+        //border-bottom: 1px solid $gray-lightest;
+        //width: 100%;
+        padding-left: 0.2rem;
+        line-height: 1.8;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $blue;
+        //display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-end;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        i {
+          font-size: 2rem;
+          //color: #333;
+          margin-right: 1rem;
+          display: none;
+        }
+      }
 
     @include tablet-portrait {
-      .container {
-        padding: 4rem;
+      padding: 4rem;
+      hr {
+        margin: 2rem 0;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      li {
+        font-size: 1.4rem;
       }
     }
 
     @include desktop {
-      .container {
-        padding: 4rem;
-        .contact-group {
-          flex-flow: row nowrap;
-          align-items: flex-start;
-          justify-content: space-between;
-          .address {
-            width: 30%;
-            align-self: flex-start;
-            padding: 2rem 0;
-          }
-          form {
-            width: 60%;
-            input {
-              width: 47%;
-            }
-            textarea {
-              height: 300px;
-            }
-
-            button {
-              width: 30%;
-            }
-          }
-        }
+      padding: 4rem;
+      hr {
+        width: 60%;
       }
     }
   }
@@ -615,8 +573,9 @@ export default {
     text-align: center;
     height: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    display: none;
 
     @include desktop {
       padding: 4rem;
