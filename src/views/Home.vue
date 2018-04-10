@@ -17,12 +17,12 @@
         <div class="container" v-scroll-reveal.reset='{ delay: 150 }'>
           <h1 class="lead">Разумные решения <br> в области инжиниринга, IT и консалтинга</h1>
           <p>Делаем мир лучше с 2005 года</p>
+          <scrollactive id="down" :offset='0' v-scroll-reveal.reset='{ delay: 350 }'>
+            <a class='scrollactive-item' href="#about">
+              <i class='fa fa-arrow-down fa-3x'></i>
+            </a>
+          </scrollactive>
         </div>
-        <scrollactive id="down" :offset='0' v-scroll-reveal.reset='{ delay: 350 }'>
-          <a class='scrollactive-item' href="#about">
-            <i class='fa fa-angle-down fa-3x'></i>
-          </a>
-        </scrollactive>
       </section>
       <section id='about'>
         <div class='skill-block'>
@@ -299,12 +299,10 @@ export default {
       }
     }
     #down {
-      position: absolute;
-      bottom: 4rem;
-      left: 2rem;
-      //transform: translate(-50%, 0);
       width: 70px;
       height: 70px;
+      margin-top: 3rem;
+      transform: translateX(-35%);
       a {
         width: 100%;
         height: 100%;
@@ -312,7 +310,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid rgba(#fff, 0.7);
+        //border: 2px solid rgba(#fff, 0.7);
         font-size: 12px;
         color: rgba(#fff, 0.7);
         box-shadow: 0 0 0 4px $blue;
@@ -328,8 +326,8 @@ export default {
         }
       }
       #down {
-        bottom: 4rem;
-        left: 4rem;
+        bottom: 8rem;
+        left: 3rem;
       }
     }
   }
